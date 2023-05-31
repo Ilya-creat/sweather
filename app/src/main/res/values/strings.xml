@@ -2,7 +2,7 @@
 <resources>
 	<!-- weather_clear strings -->
 
-	<string name="app_name">Page 1</string>
+	<string name="app_name">S-Weather</string>
 	<string name="ek_img_content">ExportKit Image</string>
 	<string name="s_weather_string">Language</string>
 	<string name="logo_string">S-Weather</string>
@@ -10,8 +10,8 @@
 	<string name="_90__string">90%</string>
 	<string name="_17_km_h_string">17 km/h</string>
 	<string name="moscow__russia_string">Moscow, Russia</string>
-	<string name="_18__c_string">18 C</string>
-	<string name="_18__c_ek1_string">18 C</string>
+	<string name="_18__c_string">18&#176; C</string>
+	<string name="_18__c_ek1_string">18&#176; C</string>
 	<string name="_10_00_string">10:00</string>
 	<string name="_10_00_ek1_string">10:00</string>
 	<string name="day_string">Day</string>
