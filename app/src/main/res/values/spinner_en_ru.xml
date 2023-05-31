@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>&#127468;&#127463; EN</item>
+        <item>&#127479;&#127482; RU </item>
+    </string-array>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- weather_clear styles -->
+
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">@color/_bg__weather_clear_ek2_color</item>
+		<item name="colorPrimaryDark">@color/_bg__weather_clear_ek2_color</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+</resources>
