@@ -7,11 +7,7 @@
     android:background="@color/_bg__weather_clear_ek2_color"
     android:orientation="vertical"
     android:padding="20dp"
-<<<<<<< HEAD
     tools:context=".WeatherClearActivity">
-=======
-    tools:context=".weather_clear_activity">
->>>>>>> origin/master
 
 
     <Button
@@ -22,11 +18,7 @@
         android:layout_marginEnd="16dp"
         android:background="?android:attr/windowSplashScreenIconBackgroundColor"
         android:fontFamily="@font/readexpro_bold"
-<<<<<<< HEAD
-        android:text="@string/week_string"
-=======
         android:text="@string/week_string_ru"
->>>>>>> origin/master
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -92,11 +84,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/readexpro_bold"
-<<<<<<< HEAD
         android:text="@string/logo_string"
-=======
-        android:text="@string/logo_string_ru"
->>>>>>> origin/master
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,11 +98,7 @@
         android:layout_marginTop="370dp"
         android:background="?android:attr/windowSplashScreenIconBackgroundColor"
         android:fontFamily="@font/readexpro_bold"
-<<<<<<< HEAD
-        android:text="@string/day_string"
-=======
         android:text="@string/day_string_ru"
->>>>>>> origin/master
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -169,7 +153,7 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/arial_bolditalicmt"
         android:gravity="center_vertical"
-        android:text="100%"
+        android:text="@string/_100"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -187,7 +171,7 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/arial_bolditalicmt"
         android:gravity="center_vertical"
-        android:text="1 km/h"
+        android:text="@string/_1_km_h"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -220,17 +204,13 @@
         android:id="@+id/textView6"
         android:layout_width="137dp"
         android:layout_height="68dp"
-        android:layout_marginStart="120dp"
         android:layout_marginTop="180dp"
         android:fontFamily="@font/arial_bolditalicmt"
-<<<<<<< HEAD
         android:text="@string/_18__c_string"
-=======
-        android:text="@string/_18__c_string_ru"
->>>>>>> origin/master
         android:textColor="@color/white"
         android:textSize="48sp"
         android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -241,11 +221,7 @@
         android:layout_marginTop="255dp"
         android:fontFamily="@font/comic_neue_bold"
         android:gravity="center"
-<<<<<<< HEAD
         android:text="@string/moscow__russia_string"
-=======
-        android:text="@string/moscow__russia_string_ru"
->>>>>>> origin/master
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -258,11 +234,7 @@
         android:layout_height="24dp"
         android:fontFamily="@font/comic_neue_bold"
         android:gravity="center|center_horizontal|center_vertical"
-<<<<<<< HEAD
-        android:text="Время"
-=======
-        android:text="Time"
->>>>>>> origin/master
+        android:text="@string/time"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
@@ -276,7 +248,7 @@
         android:layout_height="24dp"
         android:fontFamily="@font/comic_neue_bold"
         android:gravity="center|center_horizontal|center_vertical"
-        android:text="Temp"
+        android:text="@string/temp"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"

@@ -37,58 +37,42 @@ public class WeatherClearActivity extends Activity {
 
 	Spinner spinnerLang;
 
+	Config lang;
+
+	ArrayAdapter<String> languages;
+
+	LanguageListener languageListener;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
+		languageListener = new LanguageListener();
 		String[] language = getResources().getStringArray(R.array.languages);
-		ArrayAdapter<String> languages = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,
+		languages = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,
 				language);
 		languages.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-		setContentView(R.layout.weather_clear_en);
-		spinnerLang = findViewById(R.id.spinnerLang);
-		spinnerLang.setAdapter(languages);
-		spinnerLang.setSelection(0);
+
 		JSON JsonCl = new JSON();
 		CreateJson(JsonCl.CreateJSON());
-		Config lang = new Config(
+		lang = new Config(
 				ExportConfig()
 		);
 
 		if (lang.language.equals("ru")){
+			setContentView(R.layout.weather_clear_ru);
+			spinnerLang = findViewById(R.id.spinnerLang);
+			spinnerLang.setAdapter(languages);
 			spinnerLang.setSelection(1);
 		}else{
+			setContentView(R.layout.weather_clear_en);
+			spinnerLang = findViewById(R.id.spinnerLang);
+			spinnerLang.setAdapter(languages);
 			spinnerLang.setSelection(0);
 		}
 
-
-
-		spinnerLang.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-			@Override
-			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-				switch(position){
-					case 0:
-						if (!lang.language.equals("en")) {
-							spinnerLang.setSelection(0);
-							UpDate("language", "en");
-							lang.language = "en";
-						}
-						break;
-					case 1:
-						if (!lang.language.equals("ru")) {
-							spinnerLang.setSelection(1);
-							UpDate("language", "ru");
-							lang.language = "ru";
-						}
-						break;
-				}
-			}
-			@Override
-			public void onNothingSelected(AdapterView<?> parentView) {
-			}
-
-		});
+		spinnerLang.setOnItemSelectedListener(languageListener);
 
 
 
@@ -220,8 +204,37 @@ public class WeatherClearActivity extends Activity {
 		return jsonParser.parse(reader);
 	}
 
+	class LanguageListener implements AdapterView.OnItemSelectedListener {
+		@Override
+		public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+			Log.d("POSITION", position + "");
+			switch(position){
+				case 0:
+					if (!lang.language.equals("en")) {
+						setContentView(R.layout.weather_clear_en);
+						spinnerLang = findViewById(R.id.spinnerLang);
+						spinnerLang.setAdapter(languages);
+						spinnerLang.setSelection(0);
+						UpDate("language", "en");
+						lang.language = "en";
+					}
+					break;
+				case 1:
+					if (!lang.language.equals("ru")) {
+						setContentView(R.layout.weather_clear_ru);
+						spinnerLang = findViewById(R.id.spinnerLang);
+						spinnerLang.setAdapter(languages);
+						spinnerLang.setSelection(1);
+						UpDate("language", "ru");
+						lang.language = "ru";
+					}
+					break;
+			}
+			spinnerLang.setOnItemSelectedListener(languageListener);
+		}
+		@Override
+		public void onNothingSelected(AdapterView<?> parentView) {
+		}
 
-
+	}
 }
-	
-	

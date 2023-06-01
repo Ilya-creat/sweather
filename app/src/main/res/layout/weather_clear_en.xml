@@ -204,13 +204,13 @@
         android:id="@+id/textView6"
         android:layout_width="137dp"
         android:layout_height="68dp"
-        android:layout_marginStart="120dp"
         android:layout_marginTop="180dp"
         android:fontFamily="@font/arial_bolditalicmt"
         android:text="@string/_18__c_string"
         android:textColor="@color/white"
         android:textSize="48sp"
         android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -16,21 +16,10 @@
 	<string name="_10_00_ek1_string">10:00</string>
 	<string name="day_string">Day</string>
 	<string name="week_string">Week</string>
-
-	<!-- weather_clear_ru strings -->
-
-	<string name="app_name_ru">S-Weather</string>
-	<string name="ek_img_content_ru">ExportKit Image</string>
-	<string name="s_weather_string_ru">Язык</string>
-	<string name="logo_string_ru">S-Weather</string>
-	<string name="_1__string_ru">1%</string>
-	<string name="_90__string_ru">90%</string>
-	<string name="_17_km_h_string_ru">17 км/ч</string>
-	<string name="moscow__russia_string_ru">Москва, Россия</string>
-	<string name="_18__c_string_ru">18&#176; C</string>
-	<string name="_18__c_ek1_string_ru">18&#176; C</string>
-	<string name="_10_00_string_ru">10:00</string>
-	<string name="_10_00_ek1_string_ru">10:00</string>
 	<string name="day_string_ru">День</string>
-	<string name="week_string_ru">Неделя</string>
+	<string name="week_string_ru">5 дней</string>
+	<string name="_1_km_h">1 км/ч</string>
+	<string name="_100">100%</string>
+	<string name="time">Время</string>
+	<string name="temp">Темп</string>
 </resources>
