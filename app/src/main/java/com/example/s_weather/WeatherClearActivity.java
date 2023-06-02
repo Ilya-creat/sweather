@@ -17,6 +17,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.json.JSONException;
 import org.json.simple.parser.JSONParser;
 
 
@@ -191,59 +193,23 @@ public class WeatherClearActivity extends Activity {
 			public void run() {
 				while (MetaDataEN == null || MetaDataRU == null) {}
 				if (ConfigJSON.language.equals("ru")) {
-					city.setText(MetaDataRU.getName() + ", " + MetaDataRU.getSys().getCountry());
+					try {
+						//Log.d("COUNTRY", MetaDataRU.getName() + ", " + API.county.getJSONObject(MetaDataRU.getSys().getCountry()).getString("RU"));
+						city.setText(MetaDataRU.getName() + ", " + API.county.getJSONObject(MetaDataRU.getSys().getCountry()).getString("RU"));
+					} catch (JSONException e) {
+						throw new RuntimeException(e);
+					}
 				} else {
-					city.setText(MetaDataEN.getName());
+					try {
+						city.setText(MetaDataEN.getName() + ", " + API.county.getJSONObject(MetaDataEN.getSys().getCountry()).getString("EN"));
+					} catch (JSONException e) {
+						throw new RuntimeException(e);
+					}
 				}
 			}
 		}).start();
 
 		spinnerLang.setOnItemSelectedListener(languageListener);
-
-
-
-/*		buttonClick = (Button) findViewById(R.id.buttonClick) ;
-		String url = "https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}";
-		String apikey = "89dab736cfb0fa36b4137365d27b13e5";
-		buttonClick.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				Retrofit retrofit = new Retrofit.Builder()
-						.baseUrl("https://api.openweathermap.org/data/2.5/")
-						.addConverterFactory(GsonConverterFactory.create())
-						.build();
-
-				WeatherAPI MyApi = retrofit.create(WeatherAPI.class);
-				Call<Adapter> ex = MyApi.getWeather(et.getText().toString().trim(), apikey);
-
-				ex.enqueue(new Callback<Adapter>() {
-					@Override
-					public void onResponse(Call<Adapter> call, Response<Adapter> response) {
-						if (response.code() == 404) {
-							Toast.makeText(WeatherClearActivity.this, "Пожалуйста укажите город",
-									Toast.LENGTH_LONG).show();
-						} else if (!(response.isSuccessful())) {
-							Toast.makeText(WeatherClearActivity.this, "Произошла ошибка!",
-									Toast.LENGTH_LONG).show();
-						} else {
-							Adapter MyData = response.body();
-
-							Main main = MyData.getMain();
-
-							Double temp = main.getTemp();
-							Integer temperature = (int) (temp - 273.15);
-							tv.setText(String.valueOf(temperature) + "C");
-						}
-					}
-
-					@Override
-					public void onFailure(Call<Adapter> call, Throwable t) {
-						Toast.makeText(WeatherClearActivity.this, t.getMessage(),
-								Toast.LENGTH_LONG).show();
-					}
-				});
-			}
-		});*/
 	}
 
 	private void GPSTurnON() {
@@ -391,6 +357,7 @@ public class WeatherClearActivity extends Activity {
 	}
 
 	class LanguageListener implements AdapterView.OnItemSelectedListener {
+		@SuppressLint("SetTextI18n")
 		@Override
 		public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 			//Log.d("POSITION", position + "");
@@ -421,9 +388,18 @@ public class WeatherClearActivity extends Activity {
 			//Log.d("API", API.appid);
 			if (MetaDataEN != null && MetaDataRU != null) {
 				if (ConfigJSON.language.equals("ru")) {
-					city.setText(MetaDataRU.getName());
+					try {
+						//Log.d("COUNTRY", MetaDataRU.getName() + ", " + API.county.getJSONObject(MetaDataRU.getSys().getCountry()).getString("RU"));
+						city.setText(MetaDataRU.getName() + ", " + API.county.getJSONObject(MetaDataRU.getSys().getCountry()).getString("RU"));
+					} catch (JSONException e) {
+						throw new RuntimeException(e);
+					}
 				} else {
-					city.setText(MetaDataEN.getName());
+					try {
+						city.setText(MetaDataEN.getName() + ", " + API.county.getJSONObject(MetaDataEN.getSys().getCountry()).getString("EN"));
+					} catch (JSONException e) {
+						throw new RuntimeException(e);
+					}
 				}
 			}
 			spinnerLang.setOnItemSelectedListener(languageListener);
