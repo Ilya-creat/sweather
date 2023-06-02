@@ -6,5 +6,15 @@
       "url": "https://api.openweathermap.org/data/2.5/",
       "appid": "89dab736cfb0fa36b4137365d27b13e5"
     }
+  },
+  "country":{
+    "EN": {
+      "RU": "Вели",
+      "EN": "dsdsd",
+    },
+    "RU": {
+      "RU": "Россия",
+      "EN": "Russia"
+    }
   }
 }

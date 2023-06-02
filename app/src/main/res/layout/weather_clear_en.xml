@@ -215,7 +215,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/city"
         android:layout_width="120dp"
         android:layout_height="22dp"
         android:layout_marginTop="255dp"

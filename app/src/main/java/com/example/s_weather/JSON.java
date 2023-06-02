@@ -12,10 +12,23 @@ public class JSON extends AppCompatActivity {
         JSONObject json = new JSONObject();
         try {
             json.put("language", "en");
+            json.put("latitude", 0.0);
+            json.put("longitude", 0.0);
         } catch (JSONException e) {
             e.printStackTrace();
         }
         return json;
+    }
+
+    public Settings ImportJSONSettings(String json){
+        try {
+            JSONObject js = new JSONObject(json);
+            JSONObject api = js.getJSONObject("settings").getJSONObject("api");
+
+            return new Settings(api.getString("url"), api.getString("appid"));
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
