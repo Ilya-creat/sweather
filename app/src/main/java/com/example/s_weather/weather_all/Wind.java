@@ -1,5 +1,5 @@
 
-package com.example.s_weather.weather_now;
+package com.example.s_weather.weather_all;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;

@@ -1,5 +1,5 @@
 
-package com.example.s_weather.weather_now;
+package com.example.s_weather.weather_all;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
@@ -22,15 +22,18 @@ public class Main {
     @SerializedName("pressure")
     @Expose
     private Integer pressure;
-    @SerializedName("humidity")
-    @Expose
-    private Integer humidity;
     @SerializedName("sea_level")
     @Expose
     private Integer seaLevel;
     @SerializedName("grnd_level")
     @Expose
     private Integer grndLevel;
+    @SerializedName("humidity")
+    @Expose
+    private Integer humidity;
+    @SerializedName("temp_kf")
+    @Expose
+    private Double tempKf;
 
     public Double getTemp() {
         return temp;
@@ -72,14 +75,6 @@ public class Main {
         this.pressure = pressure;
     }
 
-    public Integer getHumidity() {
-        return humidity;
-    }
-
-    public void setHumidity(Integer humidity) {
-        this.humidity = humidity;
-    }
-
     public Integer getSeaLevel() {
         return seaLevel;
     }
@@ -94,6 +89,22 @@ public class Main {
 
     public void setGrndLevel(Integer grndLevel) {
         this.grndLevel = grndLevel;
+    }
+
+    public Integer getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(Integer humidity) {
+        this.humidity = humidity;
+    }
+
+    public Double getTempKf() {
+        return tempKf;
+    }
+
+    public void setTempKf(Double tempKf) {
+        this.tempKf = tempKf;
     }
 
 }

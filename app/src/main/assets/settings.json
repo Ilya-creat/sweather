@@ -4,7 +4,8 @@
       "service": "OpenWeatherMap",
       "version": "2.5",
       "url": "https://api.openweathermap.org/data/2.5/",
-      "appid": "89dab736cfb0fa36b4137365d27b13e5"
+      "appid": "89dab736cfb0fa36b4137365d27b13e5",
+      "url-icon": " https://openweathermap.org/img/wn/"
     }
   },
   "country":{
@@ -635,9 +636,6 @@
     "MZ": {
       "RU": "Мозамбик",
       "EN": "Mozambique"
-    },"MZ": {
-      "RU": "Мозамбик",
-      "EN": "Mozambique"
     },
     "NA": {
       "RU": "Намибия",
@@ -762,10 +760,6 @@
     "RS": {
       "RU": "Сербия",
       "EN": "Serbia"
-    },
-    "RU": {
-      "RU": "Россия",
-      "EN": "Russia"
     },
     "RW": {
       "RU": "Руанда",
@@ -983,222 +977,6 @@
       "RU": "Йемен",
       "EN": "Yemen"
     },
-    "RW": {
-      "RU": "Руанда",
-      "EN": "Rwanda"
-    },
-    "SA": {
-      "RU": "Саудовская Аравия",
-      "EN": "Saudi Arabia"
-    },
-    "SB": {
-      "RU": "Соломоновы о-ва",
-      "EN": "Solomon Islands"
-    },
-    "SC": {
-      "RU": "Сейшелы",
-      "EN": "Seychelles"
-    },
-    "SD": {
-      "RU": "Судан",
-      "EN": "Sudan"
-    },
-    "SE": {
-      "RU": "Швеция",
-      "EN": "Sweden"
-    },
-    "SG": {
-      "RU": "Сингапур",
-      "EN": "Singapore"
-    },
-    "SH": {
-      "RU": "Остров Святой Елены",
-      "EN": "Saint Helena"
-    },
-    "SI": {
-      "RU": "Словения",
-      "EN": "Slovenia"
-    },
-    "SJ": {
-      "RU": "Шпицберген и Ян-Майен",
-      "EN": "Svalbard and Jan Mayen Islands"
-    },
-    "SK": {
-      "RU": "Словакия",
-      "EN": "Slovakia"
-    },
-    "SL": {
-      "RU": "Сьерра-Леоне",
-      "EN": "Sierra Leone"
-    },
-    "SM": {
-      "RU": "Сан-Марино",
-      "EN": "San Marino"
-    },
-    "SN": {
-      "RU": "Сенегал",
-      "EN": "Senegal"
-    },
-    "SO": {
-      "RU": "Сомали",
-      "EN": "Somalia"
-    },
-    "SR": {
-      "RU": "Суринам",
-      "EN": "Suriname"
-    },
-    "SS": {
-      "RU": "Южный Судан",
-      "EN": "South Sudan"
-    },
-    "ST": {
-      "RU": "Сан-Томе и Принсипи",
-      "EN": "Sao Tome and Principe"
-    },
-    "SV": {
-      "RU": "Сальвадор",
-      "EN": "El Salvador"
-    },
-    "SX": {
-      "RU": "Синт-Мартен",
-      "EN": "Sint Maarten"
-    },
-    "SY": {
-      "RU": "Сирийская Арабская Республика",
-      "EN": "Syrian Arab Republic"
-    },
-    "SZ": {
-      "RU": "Эсватини",
-      "EN": "Eswatini"
-    },
-    "TC": {
-      "RU": "Тёркс и Кайкос",
-      "EN": "Turks and Caicos Islands"
-    },
-    "TD": {
-      "RU": "Чад",
-      "EN": "Chad"
-    },
-    "TF": {
-      "RU": "Французские Южные и Антарктические Территории",
-      "EN": "French Southern Territories"
-    },
-    "TG": {
-      "RU": "Того",
-      "EN": "Togo"
-    },
-    "TH": {
-      "RU": "Таиланд",
-      "EN": "Thailand"
-    },
-    "TJ": {
-      "RU": "Таджикистан",
-      "EN": "Tajikistan"
-    },
-    "TK": {
-      "RU": "Токелау",
-      "EN": "Tokelau"
-    },
-    "TL": {
-      "RU": "Восточный Тимор",
-      "EN": "Timor-Leste"
-    },
-    "TM": {
-      "RU": "Туркменистан",
-      "EN": "Turkmenistan"
-    },
-    "TN": {
-      "RU": "Тунис",
-      "EN": "Tunisia"
-    },
-    "TO": {
-      "RU": "Тонга",
-      "EN": "Tonga"
-    },
-    "TR": {
-      "RU": "Турция",
-      "EN": "Turkey"
-    },
-    "TT": {
-      "RU": "Тринидад и Тобаго",
-      "EN": "Trinidad and Tobago"
-    },
-    "TV": {
-      "RU": "Тувалу",
-      "EN": "Tuvalu"
-    },
-    "TW": {
-      "RU": "Тайвань",
-      "EN": "Taiwan"
-    },
-    "TZ": {
-      "RU": "Танзания",
-      "EN": "Tanzania, United Republic of"
-    },
-    "UA": {
-      "RU": "Украина",
-      "EN": "Ukraine"
-    },
-    "UG": {
-      "RU": "Уганда",
-      "EN": "Uganda"
-    },
-    "UM": {
-      "RU": "Малые Тихоокеанские отдалённые острова США",
-      "EN": "United States Minor Outlying Islands"
-    },
-    "US": {
-      "RU": "Соединенные Штаты Америки",
-      "EN": "United States of America"
-    },
-    "UY": {
-      "RU": "Уругвай",
-      "EN": "Uruguay"
-    },
-    "UZ": {
-      "RU": "Узбекистан",
-      "EN": "Uzbekistan"
-    },
-    "VA": {
-      "RU": "Государство-город Ватикан",
-      "EN": "Holy See (Vatican City State)"
-    },
-    "VC": {
-      "RU": "Сент-Винсент и Гренадины",
-      "EN": "Saint Vincent and the Grenadines"
-    },
-    "VE": {
-      "RU": "Венесуэла",
-      "EN": "Venezuela (Bolivarian Republic of)"
-    },
-    "VG": {
-      "RU": "Британские Виргинские о-ва",
-      "EN": "Virgin Islands (British)"
-    },
-    "VI": {
-      "RU": "Виргинские о-ва (США)",
-      "EN": "Virgin Islands (U.S.)"
-    },
-    "VN": {
-      "RU": "Вьетнам",
-      "EN": "Viet Nam"
-    },
-    "VU": {
-      "RU": "Вануату",
-      "EN": "Vanuatu"
-    },
-    "WF": {
-      "RU": "Уоллис и Футуна",
-      "EN": "Wallis and Futuna Islands"
-    },
-    "WS": {
-      "RU": "Самоа",
-      "EN": "Samoa"
-    },
-    "YE": {
-      "RU": "Йемен",
-      "EN": "Yemen"
-    },
     "YT": {
       "RU": "Майотта",
       "EN": "Mayotte"
@@ -1214,6 +992,6 @@
     "ZW": {
       "RU": "Зимбабве",
       "EN": "Zimbabwe"
-    },
+    }
   }
 }

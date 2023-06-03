@@ -26,7 +26,8 @@ public class JSON extends AppCompatActivity {
             JSONObject api = js.getJSONObject("settings").getJSONObject("api");
             JSONObject county = js.getJSONObject("country");
 
-            return new Settings(api.getString("url"), api.getString("appid"), county);
+            return new Settings(api.getString("url"), api.getString("appid"), county,
+                    api.getString("url-icon"));
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }
